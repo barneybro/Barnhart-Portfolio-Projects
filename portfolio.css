@@ -1,0 +1,404 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior: smooth;
+    cursor:default;
+}
+body {
+    background: linear-gradient(-45deg, #81848b, #3d3131, #232930, #1b1d1f, #968e86);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    font-family: "Garamond" ,serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+}
+.logo {
+    font-size: 25px;
+    color: #081b29;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.logo:hover {
+    color: beige;
+}
+
+.navigation, a {
+    font-size: 18px;
+    color: #081b29;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 35px;
+    transition: .7s;
+}
+
+
+.navigation a:hover,
+.navigation a:active {
+    color: beige;
+}
+
+.home {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    padding: 0 11.7%;
+}
+
+.home-content {
+    max-width: 600px;
+}
+
+.home-content h1 {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.home-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: beige;
+}
+.home-content p {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 20px 0 40px;
+}
+.home-content .btn-box {
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+    background: transparent;
+    
+}
+
+.profilePic {
+    float: right;
+    margin-top: 450px;
+    margin-right: 750px;
+}
+
+.btn-box a {
+    margin: 0;
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: beige;
+    border: 2px solid beige;
+    border-radius: 8px;
+    font-size: 19px;
+    color: #081b29;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+   
+}
+.btn-box a:hover {
+    color: beige;
+}
+
+.btn-box a:nth-child(2) {
+    background: transparent;
+    color:beige
+}
+
+.btn-box a:nth-child(2):hover {
+    color:#3d3131;
+}
+.btn-box a:nth-child(2)::before {
+    background: beige;
+}
+
+.btn-box a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #5d5e5f;
+    z-index: -1;
+    transition: .5s;
+}
+
+.btn-box a:hover:before {
+    width: 100%;
+}
+
+.home-sci {
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between ;
+}
+
+.home-sci a {
+    margin: 0;
+    margin-bottom: 180px;
+    position: relative;
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid beige;
+    border-radius: 50%;
+    font-size: 20px; 
+    color:beige;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+.home-sci a:hover {
+    color: #081b29;
+}
+
+.home-sci a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: beige;
+    z-index: -1;
+    transition: .5s;
+}
+
+.home-sci a:hover:before {
+    width: 100%;
+}
+
+/* Above is the home section */
+
+/* Below is the About section */
+.aboutme {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    padding: 0 11.7%;
+}
+
+.basicInfo {
+    max-width: 600px;
+}
+
+.basicInfo h1 {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.basicInfo h3 {
+    max-width: 400px;
+    font-size: 32px;
+    font-weight: 700;
+    color: beige;
+    padding: 5px;
+    
+}
+
+.basicInfo p {
+    padding: 5px;
+    max-width: 400px;
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.aboutmepic {
+    float: left;
+    margin: 0;
+    margin-left: 750px;
+    margin-top: -575px;
+}
+
+
+/* Above is the About section */
+
+/* Below is the Portfolio section */
+
+.portfolio {
+    display: flex;
+    height: 25vh;
+    align-items: center;
+    padding: 0 11.7%;
+}
+
+.title {
+    max-width: 600px;
+}
+
+.title h1 {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.title h3 {
+    max-width: 400px;
+    font-size: 32px;
+    font-weight: 700;
+    color: beige;
+    padding: 5px;
+}
+
+.container {
+    display: flex;
+    max-width: 75%;
+    padding: 0 11.7%;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+}
+.container div {
+    font-size: 5vw;
+    padding: .5em;
+    color: white;
+    flex: 1;
+  }
+
+.outer {
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+}
+.description {
+    border: 1px solid black;
+    background: transparent;
+}
+
+
+/* Above is the Portfolio section */
+
+/* Below is the ContactInfo section */
+
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding-bottom: 10%;
+  }
+
+.contact h2 {
+    text-align: center;
+    margin-top: 210px;
+}
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 50px;
+  }
+  
+  button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #555;
+  }
+
+
+  /* Above is contact me */
+
+  /* Below is footer */
+
+.footer{
+    align-items: center;
+    text-align: center;
+    margin-bottom: -20%;
+    background:#181314;
+    padding:30px;
+    text-align:center;
+}
+
+.row {
+    max-width: 1140;
+    margin: 0 auto;
+    zoom: 1;
+}
+.footer .row{
+    width:100%;
+    margin:1% 0%;
+    padding:0.6% 0%;
+    color:white;
+    font-size:0.8em;
+    margin: 0%;
+}
+    
+.footer .row a{
+    text-decoration:none;
+    color:white;
+    transition:0.5s;
+}
+    
+.footer .row a:hover{
+    color:#081b29;
+}
+    
+.footer .row ul{
+    width:100%;
+}
+    
+.footer .row ul li{
+    display:inline-block;
+    margin:0px 30px;
+}
+    
+.footer .row a i{
+    font-size:2em;
+    margin:0% 1%;
+}
+    
+ @media (max-width:720px){
+    .footer{
+    text-align:left;
+    padding:5%;
+}
+.footer .row ul li{
+    display:block;
+    margin:10px 0px;
+    text-align:left;
+}
+.footer .row a i{
+    margin:0% 3%;
+}
+    }
+ion-icon {
+        font-size: 64px;
+        display: inline-block;
+        padding: 30px;
+}
